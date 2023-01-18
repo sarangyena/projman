@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./images/logo2.png" type="image/x-icon">
+    <link rel="icon" href="./images/logo1.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <title>Seventh J (Art Gallery)</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
-        .navbar-brand{
-            width: auto;
-        }
         .carousel-item {
         transition: transform 0.6s ease-in-out;
         }
@@ -20,14 +17,12 @@
         .carousel-fade .active.carousel-item-end {
         transition: opacity 0s 0.6s;
         }
-        #c{
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: .3rem;
-        }
-        #p{
-            width: 50%;
+        #show, #p{
+            max-width: 100%;
+            height: auto;
             display: block;
+            margin: auto;
+            width: 50%;
         }
         .accordion-button.collapsed::after{
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
@@ -35,31 +30,27 @@
         .accordion-button:not(.collapsed)::after{
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
         }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+        h1, h5, li{
+            text-align: center;
+        }
     </style>
 </head>
 <body style="font-family: Sofia Sans, sans-serif;">
     <nav class="navbar navbar-expand-sm sticky-top shadow-lg bg-white">
-        <div class="container-fluid ps-5 pe-5 d-flex">
-            <div class="row flex-fill">
-                <div class="col">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="./images/logo1.png" class="w-50">
-                    </a>
-                </div>
-                <div class="col" style="text-align: right; margin: auto;">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#can" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-        
-                    <div class="collapse navbar-collapse justify-content-end" id="can">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a class="nav-link text-black" href="#">Artist</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="container-fluid ps-5 pe-5 justify-content-center">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/logo.png" class="w-75">
+            </a>
         </div>
     </nav>
     <div class="container-fluid p-3">
@@ -74,13 +65,13 @@
         
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="2500">
-                            <img src="./images/s5.jpeg" class="img-fluid d-block w-50" id="c">
+                            <img src="./images/s1.jpeg" id="show">
                         </div>
                         <div class="carousel-item" data-bs-interval="2500">
-                            <img src="./images/s4.jpeg" class="img-fluid d-block w-50" id="c">
+                            <img src="./images/s2.jpeg" id="show">
                         </div>
                         <div class="carousel-item" data-bs-interval="2500">
-                            <img src="./images/s2.jpeg" class="img-fluid d-block w-50" id="c">
+                            <img src="./images/s3.jpeg" id="show">
                         </div>
                     </div>
         
@@ -93,43 +84,196 @@
                 </div>
             </div>
             <div class="col-sm">
-                <h1 style="text-align: center;">WELCOME TO SEVENTH J ART GALLERY</h1>
+                <h1>WELCOME TO SEVENTH J ART GALLERY</h1>
                 <p>mga salita ni marvin</p>
             </div>
         </div>
 
-        <h1 style="text-align: center; border-top: 2px solid black; padding-top: 16px;">PREVIEW</h1>
+        <h1 style="border-top: 2px solid black; padding-top: 16px;">PREVIEW</h1>
 
         <div class="row p-3">
             <div class="col-sm">
-                <img src="./images/p1.jpg" class="img-fluid">
+                <img src="./images/Aunzo, Rico/2.png">
             </div>
             <div class="col-sm">
-                <img src="./images/p2.jpg" class="img-fluid">
+                <img src="./images/Campos, Nell/2.png">
             </div>
             <div class="col-sm">
-                <img src="./images/p3.jpg" class="img-fluid">
+                <img src="./images/Dumalo, Fil/2.png">
             </div>
             <div class="col-sm">
-                <img src="./images/p4.jpg" class="img-fluid">
+                <img src="./images/Fulgado, Roger/2.png">
             </div>
         </div>
         <div class="row p-3">
             <div class="col-sm">
-                <img src="./images/p5.jpg" class="img-fluid">
+                <img src="./images/Larracas, Alpha/2.png">
             </div>
             <div class="col-sm">
-                <img src="./images/p6.jpg" class="img-fluid">
+                <img src="./images/Llagas, Adler/2.jpg">
             </div>
             <div class="col-sm">
-                <img src="./images/p7.jpg" class="img-fluid">
+                <img src="./images/Marquez, Oliver/2.jpg">
             </div>
             <div class="col-sm">
-                <img src="./images/p8.jpg" class="img-fluid">
+                <img src="./images/Sapnu, Melencio/2.png">
             </div>
         </div>
 
-        <h1 style="text-align: center; border-top: 2px solid black; padding-top: 16px;">MORE INFORMATION</h1>
+        <div class="container-fluid p-3" style="border-top: 2px solid black;">
+            <h1>ARTISTS & ARTWORKS</h1>
+
+            <div class="row p-3">
+                <div class="col-sm">
+                    <a href="index.html">
+                        <img src="./images/Acasio, Lino/1.jpg">
+                        <h5>Acasio, Lino</h5>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="index.html">
+                        <img src="./images/Aunzo, Rico/1.jpg">
+                        <h5>Aunzo, Rico</h5>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="index.html">
+                        <img src="./images/Barcelona, Lito/1.png">
+                        <h5>Barcelona, Lito</h5>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="index.html">
+                        <img src="./images/Bati, Brando/1.jpg">
+                        <h5>Bati, Brando</h5>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row p-3">
+                <div class="col-sm">
+                    <a href="index.html">
+                        <img src="./images/Benito, Jovan/1.jpg">
+                        <h5>Benito, Jovan</h5>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="index.html">
+                        <img src="./images/Campos, Nell/1.png">
+                        <h5>Campos, Nell</h5>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="index.html">
+                        <img src="./images/Dumalo, Fil/1.png">
+                        <h5>Dumalo, Fil</h5>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="index.html">
+                        <img src="./images/Enrile, Norvin/1.png">
+                        <h5>Enrile, Norvin</h5>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row p-3">
+                <div class="col-sm">
+                    <a href="index.html">
+                        <img src="./images/Fulgado, Roger/1.png">
+                        <h5>Fulgado, Roger</h5>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="index.html">
+                        <img src="./images/Gonzales, Allan/1.jpg">
+                        <h5>Gonzales, Allan</h5>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="index.html">
+                        <img src="./images/Larracas, Alpha/1.jpg">
+                        <h5>Larracas, Alpha</h5>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="index.html">
+                        <img src="./images/Llagas, Adler/1.jpg">
+                        <h5>Llagas, Adler</h5>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row p-3">
+                <div class="col-sm">
+                    <a href="index.html">
+                        <img src="./images/Marquez, Oliver/1.jpg">
+                        <h5>Marquez, Oliver</h5>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="index.html">
+                        <img src="./images/Reyes, Nani/1.jpg">
+                        <h5>Reyes, Nani</h5>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="index.html">
+                        <img src="./images/Reyes, Ver/1.jpg">
+                        <h5>Reyes, Ver</h5>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="index.html">
+                        <img src="./images/Sapnu, Melencio/1.png">
+                        <h5>Sapnu, Melencio</h5>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row p-3">
+                <div class="col-sm">
+                    <a href="index.html">
+                        <img src="./images/Sarmiento, Eddie/1.jpg">
+                        <h5>Sarmiento, Eddie</h5>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="index.html">
+                        <img src="./images/Sola, Danny/1.png">
+                        <h5>Sola, Danny</h5>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="index.html">
+                        <img src="./images/Sumpia, Veronica/1.jpg">
+                        <h5>Sumpia, Veronica</h5>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="index.html">
+                        <img src="./images/Tolentino, Louie/1.jpg">
+                        <h5>Tolentino, Louie</h5>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row p-3">
+                <div class="col-sm">
+                    <a href="index.html">
+                        <img src="./images/Velasco, Cris/1.jpg" class="w-50">
+                        <h5>Velasco, Cris</h5>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="index.html">
+                        <img src="./images/Velasco, Lydia/1.jpg" class="w-50">
+                        <h5>Velasco, Lydia</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h1 style="border-top: 2px solid black; padding-top: 16px;">MORE INFORMATION</h1>
 
         <div class="accordion" id="parent">
             <div class="accordion-item">
@@ -169,26 +313,26 @@
                         <h5>Branch Locations:</h5>
                         <div class="row">
                             <div class="col-sm">
-                                <img src="./images/greenhills.jpg" class="img-fluid d-block w-50" style="border-radius: 3px; margin-left: auto; margin-right: auto;">
-                                <li style="text-align: center;">2nd Floor Shoppesvilles Greenhills, San Juan City
-                                    <a href="https://www.google.com/maps/place/Shoppesville+-+Greenhills+Shopping+Center/@14.6020391,121.048936,17z/data=!3m1!4b1!4m5!3m4!1s0x3397b7df330a3e4b:0xf6ed5f186b335f37!8m2!3d14.6020339!4d121.0511247" target="_blank">
+                                <a href="https://www.google.com/maps/place/Shoppesville+-+Greenhills+Shopping+Center/@14.6020391,121.048936,17z/data=!3m1!4b1!4m5!3m4!1s0x3397b7df330a3e4b:0xf6ed5f186b335f37!8m2!3d14.6020339!4d121.0511247" target="_blank">
+                                    <img src="./images/greenhills.jpg" class="w-50" id="show">
+                                    <li>2nd Floor Shoppesvilles Greenhills, San Juan City
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
                                             <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
                                         </svg>
-                                    </a>
-                                </li>
+                                    </li>
+                                </a>
                             </div>
                             <div class="col-sm">
-                                <img src="./images/glorietta.jpg" class="img-fluid d-block w-50" style="border-radius: 3px; margin-left: auto; margin-right: auto;">
-                                <li style="text-align: center;">3rd Flr. Glorietta 4, Ayala Center, Makati City
-                                    <a href="https://www.google.com/maps/place/Glorietta+4+-+Ayala+Malls/@14.5520235,121.0241376,17z/data=!3m1!4b1!4m5!3m4!1s0x3397c90ecbd2f397:0x4f60ad1b2310e3cf!8m2!3d14.5519742!4d121.0262819" target="_blank">
+                                <a href="https://www.google.com/maps/place/Glorietta+4+-+Ayala+Malls/@14.5520235,121.0241376,17z/data=!3m1!4b1!4m5!3m4!1s0x3397c90ecbd2f397:0x4f60ad1b2310e3cf!8m2!3d14.5519742!4d121.0262819" target="_blank">
+                                    <img src="./images/glorietta.jpg" class="w-50" id="show">
+                                    <li>3rd Flr. Glorietta 4, Ayala Center, Makati City
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
                                             <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
                                         </svg>
-                                    </a>
-                                </li>
+                                    </li>
+                                </a>
                             </div>
                         </div>
                     </div>
