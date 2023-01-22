@@ -7,7 +7,7 @@
     <link rel="icon" href="./images/logo1.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <title>Seventh J (Art Gallery)</title>
+    <title>Seventh J Art Gallery</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
         .carousel-item {
@@ -22,7 +22,10 @@
             height: auto;
             display: block;
             margin: auto;
-            width: 50%;
+            width: 80%;
+        }
+        #show{
+            border-radius: .3rem;
         }
         .accordion-button.collapsed::after{
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
@@ -59,7 +62,7 @@
                     <li class="nav-item" aria-current="page">
                         <a class="nav-link active" href="./index.html">Home</a>
                     </li>
-                    <li class="nav-item" aria-current="page">
+                    <li class="nav-item">
                         <a class="nav-link" href="./artworks.html">Artists & Artworks</a>
                     </li>
                 </ul>
@@ -67,24 +70,32 @@
         </div>
     </nav>
     <div class="container-fluid p-3">
-        <div class="row">
+        <div class="row p-3">
             <div class="col-sm">
                 <div id="demo" class="carousel carousel-fade carousel-dark p-3" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
                         <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
                         <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
                     </div>
         
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="2500">
-                            <img src="./images/s1.jpeg" id="show">
+                            <img src="./images/Slideshow/s1.jpeg" id="show">
                         </div>
                         <div class="carousel-item" data-bs-interval="2500">
-                            <img src="./images/s2.jpeg" id="show">
+                            <img src="./images/Slideshow/s2.jpeg" id="show">
                         </div>
                         <div class="carousel-item" data-bs-interval="2500">
-                            <img src="./images/s3.jpeg" id="show">
+                            <img src="./images/Slideshow/s3.jpeg" id="show">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2500">
+                            <img src="./images/Slideshow/s4.jpeg" id="show">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2500">
+                            <img src="./images/Slideshow/s5.jpeg" id="show">
                         </div>
                     </div>
         
@@ -97,231 +108,73 @@
                 </div>
             </div>
             <div class="col-sm">
-                <h1>WELCOME TO SEVENTH J ART GALLERY</h1>
-                <p>mga salita ni marvin</p>
+                <h2 style="text-align: center;">WELCOME TO SEVENTH J ART GALLERY</h2>
+                <h5 style="text-align: justify; padding: 16px;">Looking for perfect artworks to bring to your Home? We provide masterpiece paintings and sculptures by our own local established, senior, and master artists!
+                    SJAG has the goal of creating an online marketplace that is simple yet showcases the best artworks. Enjoy our selection of original artworks and high-quality sculptures that will make great gifts or will add style to your walls! 
+                    With Certificate of Authenticity and Free Shipping within Metro Manila on selected items!</h5>
             </div>
         </div>
+        
+        
+        
 
         <h1 style="border-top: 2px solid black; padding-top: 16px;">PREVIEW</h1>
 
         <div class="row p-3">
             <div class="col-sm">
-                <img src="./images/Aunzo, Rico/2.png">
+                <a href="artworks.html">
+                    <img src="./images/Aunzo, Rico/2.png">
+                </a>
             </div>
             <div class="col-sm">
-                <img src="./images/Campos, Nell/2.png">
+                <a href="artworks.html">
+                    <img src="./images/Campos, Nell/2.png">
+                </a>
             </div>
             <div class="col-sm">
-                <img src="./images/Dumalo, Fil/2.png">
+                <a href="artworks.html">
+                    <img src="./images/Dumalo, Fil/2.png">
+                </a>
             </div>
             <div class="col-sm">
-                <img src="./images/Fulgado, Roger/2.png">
+                <a href="artworks.html">
+                    <img src="./images/Fulgado, Roger/2.png">
+                </a>
             </div>
         </div>
         <div class="row p-3">
             <div class="col-sm">
-                <img src="./images/Larracas, Alpha/2.png">
+                <a href="artworks.html">
+                    <img src="./images/Larracas, Alpha/2.png">
+                </a>
             </div>
             <div class="col-sm">
-                <img src="./images/Llagas, Adler/2.jpg">
+                <a href="artworks.html">
+                    <img src="./images/Llagas, Adler/2.jpg">
+                </a>
             </div>
             <div class="col-sm">
-                <img src="./images/Marquez, Oliver/2.jpg">
+                <a href="artworks.html">
+                    <img src="./images/Marquez, Oliver/2.jpg">
+                </a>
             </div>
             <div class="col-sm">
-                <img src="./images/Sapnu, Melencio/2.png">
+                <a href="artworks.html">
+                    <img src="./images/Sapnu, Melencio/2.png">
+                </a>
             </div>
         </div>
 
-        <div class="container-fluid p-3" style="border-top: 2px solid black;">
-            <h1>ARTISTS & ARTWORKS</h1>
-
-            <div class="row p-3">
-                <div class="col-sm">
-                    <a href="index.html">
-                        <img src="./images/Acasio, Lino/1.jpg">
-                        <h5>Acasio, Lino</h5>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="index.html">
-                        <img src="./images/Aunzo, Rico/1.jpg">
-                        <h5>Aunzo, Rico</h5>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="index.html">
-                        <img src="./images/Barcelona, Lito/1.png">
-                        <h5>Barcelona, Lito</h5>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="index.html">
-                        <img src="./images/Bati, Brando/1.jpg">
-                        <h5>Bati, Brando</h5>
-                    </a>
-                </div>
-            </div>
-
-            <div class="row p-3">
-                <div class="col-sm">
-                    <a href="index.html">
-                        <img src="./images/Benito, Jovan/1.jpg">
-                        <h5>Benito, Jovan</h5>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="index.html">
-                        <img src="./images/Campos, Nell/1.png">
-                        <h5>Campos, Nell</h5>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="index.html">
-                        <img src="./images/Dumalo, Fil/1.png">
-                        <h5>Dumalo, Fil</h5>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="index.html">
-                        <img src="./images/Enrile, Norvin/1.png">
-                        <h5>Enrile, Norvin</h5>
-                    </a>
-                </div>
-            </div>
-
-            <div class="row p-3">
-                <div class="col-sm">
-                    <a href="index.html">
-                        <img src="./images/Fulgado, Roger/1.png">
-                        <h5>Fulgado, Roger</h5>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="index.html">
-                        <img src="./images/Gonzales, Allan/1.jpg">
-                        <h5>Gonzales, Allan</h5>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="index.html">
-                        <img src="./images/Larracas, Alpha/1.jpg">
-                        <h5>Larracas, Alpha</h5>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="index.html">
-                        <img src="./images/Llagas, Adler/1.jpg">
-                        <h5>Llagas, Adler</h5>
-                    </a>
-                </div>
-            </div>
-
-            <div class="row p-3">
-                <div class="col-sm">
-                    <a href="index.html">
-                        <img src="./images/Marquez, Oliver/1.jpg">
-                        <h5>Marquez, Oliver</h5>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="index.html">
-                        <img src="./images/Reyes, Nani/1.jpg">
-                        <h5>Reyes, Nani</h5>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="index.html">
-                        <img src="./images/Reyes, Ver/1.jpg">
-                        <h5>Reyes, Ver</h5>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="index.html">
-                        <img src="./images/Sapnu, Melencio/1.png">
-                        <h5>Sapnu, Melencio</h5>
-                    </a>
-                </div>
-            </div>
-
-            <div class="row p-3">
-                <div class="col-sm">
-                    <a href="index.html">
-                        <img src="./images/Sarmiento, Eddie/1.jpg">
-                        <h5>Sarmiento, Eddie</h5>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="index.html">
-                        <img src="./images/Sola, Danny/1.png">
-                        <h5>Sola, Danny</h5>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="index.html">
-                        <img src="./images/Sumpia, Veronica/1.jpg">
-                        <h5>Sumpia, Veronica</h5>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="index.html">
-                        <img src="./images/Tolentino, Louie/1.jpg">
-                        <h5>Tolentino, Louie</h5>
-                    </a>
-                </div>
-            </div>
-
-            <div class="row p-3">
-                <div class="col-sm">
-                    <a href="index.html">
-                        <img src="./images/Velasco, Cris/1.jpg" class="w-75">
-                        <h5>Velasco, Cris</h5>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="index.html">
-                        <img src="./images/Velasco, Lydia/1.jpg" class="w-75">
-                        <h5>Velasco, Lydia</h5>
-                    </a>
-                </div>
-            </div>
-        </div>
         <h1 style="border-top: 2px solid black; padding-top: 16px;">MORE INFORMATION</h1>
 
         <div class="accordion" id="parent">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button collapsed" style="background-color: green; color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="m1">
-                        About
+                        Locations
                     </button>
                 </h2>
                 <div id="a1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#parent">
-                    <div class="accordion-body">
-                        mga salita ni president johnny
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" style="background-color: green; color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="m1">
-                        Contact Us
-                    </button>
-                </h2>
-                <div id="a2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#parent">
-                    <div class="accordion-body">
-                        pangalawang salita ni president johnny
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" style="background-color: green; color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="m1">
-                        Location
-                    </button>
-                </h2>
-                <div id="a3" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#parent">
                     <div class="accordion-body">
                         <h5>Branch Locations:</h5>
                         <div class="row">
@@ -348,6 +201,32 @@
                                 </a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" style="background-color: green; color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="m1">
+                        Contact Us
+                    </button>
+                </h2>
+                <div id="a2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#parent">
+                    <div class="accordion-body">
+                        pangalawang salita ni president johnny
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" style="background-color: green; color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="m1">
+                        FAQS
+                    </button>
+                </h2>
+                <div id="a3" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#parent">
+                    <div class="accordion-body">
+                        
                     </div>
                 </div>
             </div>
